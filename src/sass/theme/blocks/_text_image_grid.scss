@@ -1,0 +1,54 @@
+.text_image_grid {
+    .container-xl {
+        display: grid;
+        @media (min-width:992px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (min-width:1400px) {
+            grid-template-columns: 3fr 2fr;
+        }
+        gap: 1rem;
+    }
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 2rem;
+}
+
+.image_grid {
+    @media (min-width:992px) {
+        display: grid;
+        gap: 0.5rem;
+        grid-template-areas: 
+            "one one"
+            "two three"
+            "two four";
+        padding: 0.5rem;
+        border: 1px solid var(--col-dark);
+    }
+    img {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        @media (min-width:992px) {
+            margin-bottom: 0;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    &__1 {
+        grid-area: one;
+    }
+    &__2 {
+        grid-area: two;
+    }
+    &__3 {
+        grid-area: three;
+    }
+    &__4 {
+        grid-area: four;
+    }
+}

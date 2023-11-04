@@ -1,0 +1,20 @@
+.btn {
+    @extend .btn;
+    border-radius: 1000vw;
+    text-transform: uppercase;
+    font-size: var(--fs-400);
+    padding : 0.75rem 4.5rem;
+}
+.btn-hero {
+    @extend .btn-primary;
+    background-color: var(--col-dark);
+    font-weight: var(--fw-300);
+}
+
+.btn-body {
+    @extend .btn-primary;
+    background-color: var(--col-brown-600);
+    border-color: var(--col-brown-600);
+    font-weight: var(--fw-900);
+    padding: 0.75rem 5rem;
+}

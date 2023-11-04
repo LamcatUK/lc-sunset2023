@@ -1,0 +1,102 @@
+/* montserrat-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v26-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v26-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+    font-size: 16px;
+    // font-size: clamp(16px, calc(0.25em + 1vw), 18px);
+}
+
+body {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-400);
+    font-style: normal;
+    font-size: var(--fs-400);
+    color: var(--col-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    a[class=""],
+    a:not([class]) {
+        font-weight: var(--fw-600);
+        transition: color var(--transition);
+        &:hover {
+        }
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
+    font-family: var(--ff-body);
+    font-weight: var(--fw-400);
+    font-style: normal;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    span {
+        font-weight: var(--fw-700);
+    }
+}
+
+h2, .h2 {
+    font-size: var(--fs-800); //1.8rem;
+}
+
+p {
+    line-height: 2;
+}
+
+.font-size-base {
+    font-size: 1rem;
+}
+
+
+sup {
+    font-size: 60%;
+}
+.larger {
+    font-size: 1.25em;
+}
+.smaller {
+    font-size: 0.75em;
+}
+
+.max-ch {
+    max-width: 70ch;
+    margin-right: auto;
+}
+
+
+// ::selection {
+//     background: var(--col-green-400);
+//     color: var(--col-gold-400);
+// }

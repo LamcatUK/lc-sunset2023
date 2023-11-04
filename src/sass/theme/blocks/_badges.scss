@@ -1,0 +1,18 @@
+.badges {
+    h3 {
+        display: inline-block;
+        background-color: var(--col-dark);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        font-size: var(--fs-500);
+        margin-inline: auto;
+    }
+    &__grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__badge {
+        max-width: 100%;
+    }
+}

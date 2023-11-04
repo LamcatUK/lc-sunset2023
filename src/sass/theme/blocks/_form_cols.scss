@@ -1,0 +1,60 @@
+.form_cols {
+    padding-block: 8rem;
+    background-color: var(--col-dark);
+    color: var(--col-light);
+
+    h2 {
+        max-width: 16ch;
+        margin-bottom: 5rem;
+    }
+
+
+    label {
+        text-transform: uppercase;
+        font-size: var(--fs-300);
+        font-weight: var(--fw-400);
+    }
+
+
+    .wpcf7 {
+        max-width: unset;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    textarea,
+    select {
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid var(--col-light);
+        background-color: transparent;
+        color: var(--col-light);
+        margin-bottom: 2rem;
+    }
+
+    input[type=radio] {
+        margin-bottom: 2rem;
+    }
+
+    select {
+        color: #9e9e9e;
+        option:not(:first-of-type) {
+            color: var(--col-dark);
+        }
+    }
+
+    textarea {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    input[type=submit] {
+        @extend .btn;
+        @extend .btn-primary;
+        background-color: var(--col-light);
+        color: var(--col-dark);
+        font-weight: var(--fw-400);
+    }
+}

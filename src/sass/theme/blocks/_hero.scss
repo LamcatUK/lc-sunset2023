@@ -1,0 +1,48 @@
+// front page only
+
+.hero {
+    margin-top: var(--h-top-desktop);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #ccc;
+    position: relative;
+    isolation: isolate;
+
+    &__title {
+        font-size: var(--fs-900);
+        font-weight: var(--fw-300);
+        line-height: 1;
+        color: var(--col-light);
+        text-align: center;
+        @media(min-width:768px) {
+            text-align: end;
+        }
+        text-transform: uppercase;
+        text-wrap: balance;
+        span {
+            font-weight: var(--fw-700);
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100vw;
+        @media(min-width:768px) {
+            width: 75vw;
+        }
+        height: 80%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    &__overlay_inner {
+        background-color: hsl(var(--hsl-brown-600) / .74 );
+        width: 100%;
+        height: 100%;
+        transform-origin: bottom right;
+        transform: rotate(6deg) translateX(-60px);
+    }
+}

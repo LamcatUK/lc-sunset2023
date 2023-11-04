@@ -1,0 +1,36 @@
+$col-primary: hsl(181, 100%, 14%);
+$col-secondary: hsl(51, 100%, 50%);
+$col-grey: #FFF0F0;
+
+:root {
+
+    --hsl-brown-400: 37 32% 76%; // #d6c7af;
+    --col-brown-400: hsl(var(--hsl-brown-400));
+    
+    --hsl-brown-600: 34 18% 41%; // #7c6c57;
+    --col-brown-600: hsl(var(--hsl-brown-600));
+
+    --col-light: #fefefe;
+    --col-dark: #333333;
+    
+    
+    --ff-body: 'Montserrat', Verdana, Helvetica, sans-serif;
+
+    --transition: 100ms ease-in;
+
+    --h-top-desktop: 114px;
+
+    --fw-900: 900;
+    --fw-700: 700;
+    --fw-400: 400;
+    --fw-300: 300;
+    
+    --fs-300: 1rem; // labels 16
+    --fs-400: 1.125rem; // body 18
+    --fs-500: 1.2656rem; // btn 25
+    --fs-600: 1.4238rem; // nav 22
+    --fs-800: 2.2806rem; // h2 36
+    --fs-900: 3.2475rem; // h1 52
+}
+
+

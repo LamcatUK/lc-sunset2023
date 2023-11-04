@@ -1,0 +1,44 @@
+.footer {
+    &__grid {
+        display: grid;
+        gap: 2rem;
+        max-width: 800px;
+        place-content: center;
+        margin-inline: auto;
+        grid-template-areas: "logo logo" "leftchap rightchap";
+        @media (min-width:992px) {
+            grid-template-areas: "leftchap logo rightchap";
+        }
+
+        padding-bottom: 2rem;
+    }
+
+    .left_chap {
+        grid-area: leftchap;
+    }
+    .logo {
+        grid-area: logo;
+        justify-self: center;
+    }
+    .right_chap {
+        grid-area: rightchap;
+    }
+
+    .left_chap,
+    .right_chap {
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        width: 160px;
+        height: 160px;
+        border: 1px solid var(--col-dark);
+    }
+
+    .colophon {
+        text-align: center;
+        font-size: var(--fs-300);
+        font-weight: var(--fw-700);   
+    }
+
+    padding-bottom: 2rem;
+}
