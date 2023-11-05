@@ -6763,40 +6763,42 @@
 	  });
 	});
 
-	// hide beyond height of navbar
+	// hide beyond height of navbar (--h-top)
+	let lastScrollPosition = 0;
+	const navbar = document.getElementById('wrapper-navbar');
+	const navbarHeight = navbar.clientHeight; // Get the height of the navbar
+
+	window.addEventListener('scroll', function () {
+	  const currentScroll = window.scrollY || document.documentElement.scrollTop;
+	  if (currentScroll > navbarHeight) {
+	    if (currentScroll > lastScrollPosition) {
+	      // Down scroll
+	      navbar.classList.add('hidden');
+	    } else {
+	      // Up scroll
+	      navbar.classList.remove('hidden');
+	    }
+	  }
+	  lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
+	});
+
+	// hide on scroll, assuming --h-top of zero
 	// let lastScrollPosition = 0;
 	// const navbar = document.getElementById('wrapper-navbar');
-	// const navbarHeight = navbar.clientHeight; // Get the height of the navbar
 
 	// window.addEventListener('scroll', function() {
 	//     const currentScroll = window.scrollY || document.documentElement.scrollTop;
 
-	//     if (currentScroll > navbarHeight) {
-	//         if (currentScroll > lastScrollPosition) {
-	//             // Down scroll
-	//             navbar.classList.add('hidden');
-	//         } else {
-	//             // Up scroll
-	//             navbar.classList.remove('hidden');
-	//         }
+	//     if (currentScroll > lastScrollPosition) {
+	//         // Down scroll
+	//         navbar.classList.add('hidden');
+	//     } else {
+	//         // Up scroll
+	//         navbar.classList.remove('hidden');
 	//     }
 
 	//     lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
 	// });
-
-	let lastScrollPosition = 0;
-	const navbar = document.getElementById('wrapper-navbar');
-	window.addEventListener('scroll', function () {
-	  const currentScroll = window.scrollY || document.documentElement.scrollTop;
-	  if (currentScroll > lastScrollPosition) {
-	    // Down scroll
-	    navbar.classList.add('hidden');
-	  } else {
-	    // Up scroll
-	    navbar.classList.remove('hidden');
-	  }
-	  lastScrollPosition = currentScroll <= 0 ? 0 : currentScroll;
-	});
 
 	exports.Alert = alert;
 	exports.Button = button;
