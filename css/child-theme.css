@@ -22529,8 +22529,22 @@ sup {
   flex-direction: column;
   justify-content: center;
   padding-inline: 2rem;
+  order: 0;
+}
+@media (min-width: 992px) {
+  .text_content {
+    order: 1;
+  }
 }
 
+.image_grid {
+  order: 1;
+}
+@media (min-width: 992px) {
+  .image_grid {
+    order: 0;
+  }
+}
 @media (min-width: 992px) {
   .image_grid {
     display: grid;

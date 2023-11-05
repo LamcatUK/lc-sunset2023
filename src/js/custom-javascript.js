@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+lightbox.option({
+    'fadeDuration': 300,
+    'imageFadeDuration': 300,
+    'resizeDuration': 400,
+    'disableScrolling': true,
+    'wrapAround': true
+});
+
 // hide on scroll, assuming --h-top of zero
 // let lastScrollPosition = 0;
 // const navbar = document.getElementById('wrapper-navbar');
