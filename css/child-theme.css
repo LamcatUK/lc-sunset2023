@@ -22349,6 +22349,7 @@ sup {
 #wrapper-navbar {
   background-color: var(--col-brown-400);
   padding-block: 0.5rem;
+  transition: transform 500ms ease;
 }
 #wrapper-navbar .navbar-brand {
   background-image: url(../img/sunset-cove-logo.svg);
@@ -22374,6 +22375,9 @@ sup {
     content: "";
     border-right: 3px solid var(--col-dark);
   }
+}
+#wrapper-navbar.hidden {
+  transform: translateY(-100%);
 }
 
 .footer {

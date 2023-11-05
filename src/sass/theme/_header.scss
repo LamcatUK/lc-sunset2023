@@ -3,6 +3,8 @@
 
     padding-block: 0.5rem;
 
+    transition: transform 500ms ease;
+    
     .navbar-brand {
         background-image: url(../img/sunset-cove-logo.svg);
         background-size: contain;
@@ -29,4 +31,8 @@
             border-right: 3px solid var(--col-dark);
         }
     }
+    &.hidden {
+        transform: translateY(-100%);
+    }
 }
+
