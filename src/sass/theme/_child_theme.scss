@@ -21,7 +21,7 @@ a.noline {
 a.anchor {
     display: block;
     position: relative;
-    top: -150px;
+    top: calc(var(--h-top-desktop) * -1);
     visibility: hidden;
 }
 

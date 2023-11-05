@@ -22370,7 +22370,7 @@ sup {
   text-transform: uppercase;
   position: relative;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #wrapper-navbar .nav-item:not(:last-child)::after {
     content: "";
     border-right: 3px solid var(--col-dark);
@@ -22631,7 +22631,7 @@ a.noline {
 a.anchor {
   display: block;
   position: relative;
-  top: -150px;
+  top: calc(var(--h-top-desktop) * -1);
   visibility: hidden;
 }
 

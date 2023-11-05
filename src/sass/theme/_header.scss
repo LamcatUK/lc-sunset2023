@@ -25,7 +25,7 @@
         text-transform: uppercase;
         position: relative;
     }
-    @media (min-width:768px) {
+    @media (min-width:992px) {
         .nav-item:not(:last-child)::after {
             content: "";
             border-right: 3px solid var(--col-dark);
