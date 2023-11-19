@@ -22276,7 +22276,7 @@ readers do not read off random characters that represent icons */
   src: url("../fonts/montserrat-v26-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 html {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body {

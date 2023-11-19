@@ -26,6 +26,8 @@ defined('ABSPATH') || exit;
         <div class="colophon">&copy;
             <?=date('Y')?> Florida Home Finders |
             All Rights Reserved
+            <p>All information on this website subject to change without notice. Renderings, photography, and virtual
+                tours are for display purposes only.</p>
         </div>
     </div>
 </footer>
