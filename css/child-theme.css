@@ -22366,7 +22366,7 @@ sup {
 }
 #wrapper-navbar .nav-item {
   font-weight: var(--fw-700);
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   text-transform: uppercase;
   position: relative;
 }
